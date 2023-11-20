@@ -21,12 +21,10 @@ namespace pryFernandezTP
 
             lblConexion.Text = objEmpleadosBD.estadoConexion;
             lblConexion.BackColor = Color.Green;
-
             
             string hora = DateTime.Now.ToLongTimeString();
             string fecha = DateTime.Now.ToShortDateString();
-            lblFechaHora.Text = hora + " " + fecha;
-            
+            lblFechaHora.Text = hora + " " + fecha;           
         }
 
         private void btnFrmRegistrar_Click(object sender, EventArgs e)
@@ -56,8 +54,6 @@ namespace pryFernandezTP
             pnlFormHijo.Tag = formHijo;
             formHijo.BringToFront();
             formHijo.Show();
-        }       
-
-        
+        }
     }
 }
